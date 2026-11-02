@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Explore the BHAL3STO Records music studio gallery, featuring recording equipment and studio photographs.">
+
+    <meta name="keywords" content="BHAL3STO Records gallery, music studio, recording studio, music production">
+
+    <meta name="author" content="BHAL3STO Records">
+
+    <title>Gallery | BHAL3STO Records</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+
+        <a href="index.html">
+            <img src="Images/logo.webp" alt="BHAL3STO Records logo" class="logo">
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="content-section">
+
+            <h1>Our Studio Gallery</h1>
+
+            <p>
+                Welcome to the BHAL3STO Records gallery.
+                Explore our studio environment and the
+                equipment used in music creation.
+            </p>
+
+            <div class="gallery-grid">
+
+                <img src="Images/studio 1.jpg"
+                     alt="BHAL3STO Records music recording studio"
+                     class="gallery-img"
+                     data-lightbox>
+
+                <img src="Images/Studio 2.webp"
+                     alt="Music production studio equipment"
+                     class="gallery-img"
+                     data-lightbox>
+
+                <img src="Images/studio 3.webp"
+                     alt="Recording equipment inside the studio"
+                     class="gallery-img"
+                     data-lightbox>
+
+                <img src="Images/studio 4.webp"
+                     alt="Another view of the BHAL3STO Records studio"
+                     class="gallery-img"
+                     data-lightbox>
+
+            </div>
+
+            <h2>Studio Video</h2>
+
+            <p>
+                Watch a video showcasing our creative
+                music environment.
+            </p>
+
+            <video controls preload="metadata">
+
+                <source src="Images/Download.mp4" type="video/mp4">
+
+                Your browser does not support video playback.
+
+            </video>
+
+        </section>
+
+    </main>
+
+    <!-- Image lightbox -->
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+
+        <button type="button"
+                class="lightbox-close"
+                id="lightbox-close"
+                aria-label="Close image">
+            &times;
+        </button>
+
+        <img src=""
+             alt="Enlarged studio photograph"
+             id="lightbox-image">
+
+    </div>
+
+    <footer>
+
+        <p>
+            &copy; <span id="year"></span>
+            BHAL3STO Records. All rights reserved.
+        </p>
+
+        <p id="date-time"></p>
+
+    </footer>
+
+</body>
+</html>

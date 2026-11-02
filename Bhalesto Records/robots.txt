@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fancy-liger-5b7264.netlify.app/sitemap.xml

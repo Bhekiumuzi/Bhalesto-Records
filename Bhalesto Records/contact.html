@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Contact BHAL3STO Records for questions, music information and general enquiries.">
+
+    <meta name="keywords" content="contact BHAL3STO Records, music label, music production, Johannesburg">
+
+    <meta name="author" content="BHAL3STO Records">
+
+    <title>Contact Us | BHAL3STO Records</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+
+        <a href="index.html">
+            <img src="Images/logo.webp" alt="BHAL3STO Records logo" class="logo">
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="enquiry.html">Enquiry</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="content-section">
+
+            <h1>Contact Us</h1>
+
+            <p>
+                We would love to hear from you.
+                Contact BHAL3STO Records if you have
+                questions or need more information
+                about our services.
+            </p>
+
+            <h2>Get In Touch</h2>
+
+            <p><strong>Business:</strong> BHAL3STO Records</p>
+
+            <p><strong>Location:</strong> Johannesburg, South Africa</p>
+
+            <h2>Send Us a Message</h2>
+
+            <form name="contact"
+                  method="POST"
+                  data-netlify="true"
+                  netlify-honeypot="bot-field"
+                  class="site-form">
+
+                <input type="hidden" name="form-name" value="contact">
+
+                <p class="hidden-field">
+                    <label>
+                        Do not fill this in:
+                        <input name="bot-field">
+                    </label>
+                </p>
+
+                <label for="full-name">Full Name:</label>
+
+                <input
+                    type="text"
+                    id="full-name"
+                    name="full-name"
+                    required
+                    minlength="2"
+                    placeholder="Enter your full name">
+
+                <label for="email">Email Address:</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="Enter your email address">
+
+                <label for="phone">Phone Number:</label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your phone number">
+
+                <label for="subject">Subject:</label>
+
+                <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    required
+                    placeholder="Enter the subject">
+
+                <label for="message">Your Message:</label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    required
+                    minlength="10"
+                    placeholder="Write your message here"></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            &copy; <span id="year"></span>
+            BHAL3STO Records. All rights reserved.
+        </p>
+
+        <p id="date-time"></p>
+
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Service Enquiry | BHAL3STO Records</title>
+
+    <meta name="description" content="Enquire about music recording, production, mixing, mastering and other services offered by BHAL3STO Records.">
+
+    <meta name="keywords" content="BHAL3STO Records, music services, recording, music production, artist enquiry">
+
+    <meta name="author" content="BHAL3STO Records">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <img src="Images/logo.webp" alt="BHAL3STO Records logo" class="logo">
+    <h1>BHAL3STO Records</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+        <a href="enquiry.html">Enquiry</a>
+    </nav>
+</header>
+
+<main>
+    <h1>Service Enquiry</h1>
+
+    <p>
+        Are you an artist interested in working with BHAL3STO Records?
+        Complete the form below and tell us which service you need.
+    </p>
+
+    <form name="enquiry"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          class="site-form">
+
+        <input type="hidden" name="form-name" value="enquiry">
+
+        <p hidden>
+            <label>
+                Do not fill this in:
+                <input name="bot-field">
+            </label>
+        </p>
+
+        <label for="artist-name">Artist Name:</label>
+        <input type="text" id="artist-name" name="artist-name"
+               placeholder="Enter your artist name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email"
+               placeholder="Enter your email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone"
+               placeholder="Enter your phone number">
+
+        <label for="service">Choose a Service:</label>
+        <select id="service" name="service" required>
+            <option value="">Select a service</option>
+            <option value="Music Recording">Music Recording</option>
+            <option value="Music Production">Music Production</option>
+            <option value="Mixing">Mixing</option>
+            <option value="Mastering">Mastering</option>
+            <option value="Music Video">Music Video</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label for="budget">Estimated Budget (Optional):</label>
+        <input type="text" id="budget" name="budget"
+               placeholder="Enter your estimated budget">
+
+        <label for="project">Tell Us About Your Project:</label>
+        <textarea id="project" name="project"
+                  placeholder="Describe the service you need..."
+                  minlength="10" required></textarea>
+
+        <button type="submit">Submit Enquiry</button>
+    </form>
+</main>
+
+<footer>
+    <p>&copy; <span id="year"></span> BHAL3STO Records. All rights reserved.</p>
+    <p id="date-time"></p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
